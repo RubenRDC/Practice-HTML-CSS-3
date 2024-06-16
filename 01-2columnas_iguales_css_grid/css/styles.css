@@ -40,7 +40,7 @@ h1 {
 
 /** CODIGO AQUI **/
 @media (min-width: 768px){
-    .contenedor{
+    .dosColumnasIgualesGrid{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         column-gap: 3rem;
