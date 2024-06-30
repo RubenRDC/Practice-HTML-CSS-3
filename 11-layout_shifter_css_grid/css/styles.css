@@ -49,3 +49,42 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .layout-shifter {
+        display: grid;
+        grid-template-areas: "Contenido"
+            "Inferior";
+    }
+
+    .sidebar {
+        grid-area: Inferior;
+        /*Defino el area a ocupar*/
+    }
+
+    .contenido-principal {
+        grid-area: Contenido;
+        display: grid;
+        grid-template-areas: "entrada1 entrada2";
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .layout-shifter {
+        grid-template-areas: "Contenido Sidebar";
+        column-gap: 2rem;
+    }
+
+    .sidebar {
+        grid-area: Sidebar;
+        /*Defino el area a ocupar*/
+    }
+
+    .contenido-principal {
+        grid-area: Contenido;
+        grid-template-areas: "entrada1"
+            "entrada2";
+        grid-template-columns: unset;
+    }
+}
