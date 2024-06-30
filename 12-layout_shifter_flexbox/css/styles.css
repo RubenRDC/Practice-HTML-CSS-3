@@ -48,9 +48,6 @@ p {
 }
 
 /** CODIGO AQUI **/
-.contenido-principal{}
-.sidebar{}
-.layout-shifter{}
 @media (min-width: 768px){
     .layout-shifter{
         display: flex;
